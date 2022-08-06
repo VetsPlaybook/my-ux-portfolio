@@ -1,0 +1,33 @@
+.background {
+  height: 1080px;
+  width: 100%;
+  background: linear-gradient(243deg, #01a78e 44.6%, #f9f9f9 44.6%);
+  position: relative;
+  top: -76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  display: inline-block;
+  height: 930px;
+  margin-top: 150px;
+}
+
+.introTitle {
+  display: inline-block;
+  width: 450px;
+  height: 349px;
+}
+
+.verticalLine {
+  display: inline-block;
+  width: 3px;
+  background-color: #01a78e;
+  height: 743px;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+  margin-left:140px ;
+}
