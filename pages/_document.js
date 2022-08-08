@@ -10,11 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="stylesheet" href="https://use.typekit.net/koi1dqq.css" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-            rel="stylesheet"
-          />
+        <link rel="stylesheet" href="https://use.typekit.net/koi1dqq.css"/>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
