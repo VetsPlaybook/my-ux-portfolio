@@ -1,3 +1,12 @@
+@import "../../breakpoints/breakpoints.scss";
+
+//$breakpoints: (
+//"phone": 360px,
+//"tablet": 768px,
+//"desktop": 1366px,
+//"LGdesktop": 1920px,
+//) !default;
+
 .button {
   height: 39px;
   width: 152px;
@@ -5,23 +14,23 @@
   font-family: Motiva Sans;
   font-size: 20px;
   font-weight: 700;
-  color: #01A78E;
+  color: #01a78e;
   cursor: pointer;
 }
 
 .button:hover {
-    margin-left: 63px;
-    height: 39px;
-    width: 152px;
-    border-radius: 10px;
-    font-family: Motiva Sans;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 125px;
-    color: white;
-    background-color: #28E3D0;
-    cursor: pointer;
-  }
+  margin-left: 63px;
+  height: 39px;
+  width: 152px;
+  border-radius: 10px;
+  font-family: Motiva Sans;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 125px;
+  color: white;
+  background-color: #28e3d0;
+  cursor: pointer;
+}
 
 .logo {
   display: inline-block;
@@ -41,12 +50,15 @@
   font-family: Bahnschrift, Lato, Helvetica, sans-serif;
   position: relative;
   top: 0px;
-  z-index: 10;
+  z-index: 10;  
 }
 
 .navItems {
   display: inline-block;
   margin-right: 140px;
+  @include media(">phone", "<=1650px") {
+    display: none;
+  }
 }
 
 .navItems ul {

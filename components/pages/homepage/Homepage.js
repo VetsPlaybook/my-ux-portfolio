@@ -13,6 +13,7 @@ function Homepage() {
           <p>Lets work together to create the right user experience for your customers and stakeholders</p>
         </div>
         <img src="images/selfPortrait.png" className={classes.image} />
+        <img src="images/selfPortrait2.png" className={classes.image2} />
       </div>
     </>
   );

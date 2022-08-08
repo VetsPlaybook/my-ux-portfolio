@@ -8,66 +8,122 @@
 //"LGdesktop": 1920px,
 //) !default;
 
-
-  .container {
-    height: 1080px;
-    width: 100%;
-    background: linear-gradient(243deg, #01a78e 44.6%, #f9f9f9 44.6%);
-    position: relative;
-    top: -76px;
-    @include media (">=1650px") {
+.container {
+  height: 1080px;
+  width: 100%;
+  background: linear-gradient(243deg, #01a78e 44.6%, #f9f9f9 44.6%);
+  position: relative;
+  top: -76px;
+  @include media(">=1650px") {
     @include desktop-container;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       ". verticalLine . . . . image image image image image image image ."
       ". verticalLine introTitle introTitle introTitle . image image image image image image image ."
       ". verticalLine . . . . image image image image image image image .";
-    }
-
-    @include media (">=desktop", "<=1659px") {
-      @include desktop-container;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-        ". . introTitle introTitle . image image image image image image image image ."
-        ". . introTitle introTitle . image image image image image image image image ."
-        ". . introTitle introTitle . image image image image image image image image .";
-      }
   }
 
-  .image {
-    grid-area: image;
-    margin-top: 150px;
+  @include media(">=desktop", "<1650px") {
+    @include desktop-container;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". . introTitle introTitle . image image image image image image image image ."
+      ". . introTitle introTitle . image image image image image image image image ."
+      ". . introTitle introTitle . image image image image image image image image .";
   }
 
-  .introTitle {
-    grid-area: introTitle;
-    width: 450px;
+  @include media(">=tablet", "<desktop") {
+    @include tablet-container;
+    height: 1200px;
+    background: linear-gradient(243deg, #01a78e 68%, #f9f9f9 68%);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      ". introTitle introTitle introTitle introTitle . "
+      ". image image image image . ";
+  }
+
+  @include media(">=phone", "<tablet") {
+    @include phone-container;
+    height: 900px;
+    background: none;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      ". introTitle introTitle introTitle introTitle . "
+      "image2 image2 image2 image2 image2 image2 ";
+  }
+}
+
+.image {
+  grid-area: image;
+  margin-top: 150px;
+  @include media(">=tablet", "<desktop") {
     height: 100%;
-    @include media (">=desktop", "<=1659px") {
-      margin-top: 360px;
-    }
+    width: 100%;
+    margin-top: 0;
   }
 
-  .introTitle H1{
-    margin-top: 0px;
-    margin-bottom: 10px;
+  @include media(">=phone", "<tablet") {
+    display: none;
+  }
+}
+
+.image2 {
+  @include media(">=tablet") {
+    display: none;
   }
 
-  .introTitle H3{
-    margin-top: 0px;
-    margin-bottom: 10px;
+  @include media("<tablet") {
+    grid-area: image2;
+    height: 100%;
+    width: 107%;
   }
+}
 
-  .introTitle H4{
-    margin: 0;
+.introTitle {
+  grid-area: introTitle;
+  width: 450px;
+  height: 100%;
+  @include media(">=desktop", "<=1659px") {
+    margin-top: 360px;
   }
-
-  .verticalLine {
-    grid-area: verticalLine;
-    width: 3px;
-    background-color: #01a78e;
-    height: 743px;
-    border-radius: 10px;
+  @include media(">=tablet", "<desktop") {
     margin-top: 200px;
+    width: 80%;
+    text-align: center;
+    margin-left: 50px;
+    color: white;
   }
 
+  @include media("<tablet") {
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    color: black;
+  }
+}
+
+.introTitle H1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.introTitle H3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.introTitle H4 {
+  margin: 0;
+}
+
+.verticalLine {
+  grid-area: verticalLine;
+  width: 3px;
+  background-color: #01a78e;
+  height: 743px;
+  border-radius: 10px;
+  margin-top: 200px;
+  @include media("<desktop") {
+    display: none;
+  }
+}

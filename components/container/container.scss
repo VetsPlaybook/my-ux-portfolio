@@ -5,6 +5,16 @@
     column-gap: 16px;
 }
 
-@mixin cellphone-container {
+@mixin tablet-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    column-gap: 10px;
+}
 
+@mixin phone-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 78px 78px 78px 78px 1fr;
+    column-gap: 10px;
 }
