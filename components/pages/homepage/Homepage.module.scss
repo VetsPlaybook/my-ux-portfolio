@@ -1,0 +1,73 @@
+@import "../../breakpoints/breakpoints.scss";
+@import "../../container/container.scss";
+
+//$breakpoints: (
+//"phone": 360px,
+//"tablet": 768px,
+//"desktop": 1366px,
+//"LGdesktop": 1920px,
+//) !default;
+
+
+  .container {
+    height: 1080px;
+    width: 100%;
+    background: linear-gradient(243deg, #01a78e 44.6%, #f9f9f9 44.6%);
+    position: relative;
+    top: -76px;
+    @include media (">=1650px") {
+    @include desktop-container;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". verticalLine . . . . image image image image image image image ."
+      ". verticalLine introTitle introTitle introTitle . image image image image image image image ."
+      ". verticalLine . . . . image image image image image image image .";
+    }
+
+    @include media (">=desktop", "<=1659px") {
+      @include desktop-container;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        ". . introTitle introTitle . image image image image image image image image ."
+        ". . introTitle introTitle . image image image image image image image image ."
+        ". . introTitle introTitle . image image image image image image image image .";
+      }
+  }
+
+  .image {
+    grid-area: image;
+    margin-top: 150px;
+  }
+
+  .introTitle {
+    grid-area: introTitle;
+    width: 450px;
+    height: 100%;
+    @include media (">=desktop", "<=1659px") {
+      margin-top: 360px;
+    }
+  }
+
+  .introTitle H1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .introTitle H3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .introTitle H4{
+    margin: 0;
+  }
+
+  .verticalLine {
+    grid-area: verticalLine;
+    width: 3px;
+    background-color: #01a78e;
+    height: 743px;
+    border-radius: 10px;
+    margin-top: 200px;
+  }
+

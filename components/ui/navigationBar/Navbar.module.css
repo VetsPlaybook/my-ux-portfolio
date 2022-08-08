@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: space-between;
   font-family: Bahnschrift, Lato, Helvetica, sans-serif;
-  position: sticky;
+  position: relative;
   top: 0px;
   z-index: 10;
 }

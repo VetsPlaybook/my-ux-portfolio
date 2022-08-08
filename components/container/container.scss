@@ -1,0 +1,10 @@
+@mixin desktop-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 122px 122px 122px 122px 122px 122px 122px 122px 122px 122px 122px 122px 1fr;
+    column-gap: 16px;
+}
+
+@mixin cellphone-container {
+
+}

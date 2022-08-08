@@ -1,10 +1,10 @@
 import React from "react";
-import classes from "./Homepage.module.css";
+import classes from "./Homepage.module.scss";
 
 function Homepage() {
   return (
     <>
-      <div className={classes.background}>
+      <div className={classes.container}>
         <div className={classes.verticalLine} />
         <div className={classes.introTitle}>
           <h3>Hello, I am</h3>
