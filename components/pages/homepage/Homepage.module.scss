@@ -99,29 +99,31 @@ $secondary-color: #28e3d0;
   position: relative;
   top: -76px;
   @include desktop-container;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     ". verticalLine . . . . image image image image image image image ."
     ". verticalLine introTitle introTitle introTitle . image image image image image image image ."
-    ". verticalLine . . . . image image image image image image image .";
+    ". verticalLine . . . . image image image image image image image ."
+    ". square1 square2 square3 square4 square5 square6 square7 square8 square9 square10 square11 square12 .";
 
   @include media(">=desktop", "<1650px") {
     @include desktop-container;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       ". . introTitle introTitle . image image image image image image image image ."
       ". . introTitle introTitle . image image image image image image image image ."
-      ". . introTitle introTitle . image image image image image image image image .";
+      ". . introTitle introTitle . image image image image image image image image ."
+      ". square1 square2 square3 square4 square5 square6 square7 square8 square9 square10 square11 square12 .";
   }
 
   @include media(">=tablet", "<desktop") {
     @include tablet-container;
-    height: 1200px;
+    height: 1195px;
     background: linear-gradient(243deg, #01a78e 68%, #f9f9f9 68%);
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       ". introTitle introTitle introTitle introTitle . "
-      ". image image image image . ";
+      ". image3 image3 image3 image3 . ";
   }
 
   @include media(">=phone", "<tablet") {
@@ -139,9 +141,7 @@ $secondary-color: #28e3d0;
   grid-area: image;
   margin-top: 150px;
   @include media(">=tablet", "<desktop") {
-    height: 100%;
-    width: 100%;
-    margin-top: 0;
+    display: none;
   }
 
   @include media(">=phone", "<tablet") {
@@ -150,15 +150,36 @@ $secondary-color: #28e3d0;
 }
 
 .image2 {
-  @include media(">=tablet") {
+  @include media(">=desktop") {
+    display: none;
+  }
+
+  @include media(">=tablet", "<desktop") {
     display: none;
   }
 
   @include media("<tablet") {
     grid-area: image2;
     height: 100%;
-    width: 107%;
+    width: 115%;
   }
+}
+
+.image3 {
+  @include media(">=desktop") {
+    display: none;
+  }
+
+  @include media(">=tablet", "<desktop") {
+    grid-area: image3;
+    height: 100%;
+    width: 100%;
+  }
+
+  @include media("<tablet") {
+    display: none;
+  }
+
 }
 
 .introTitle {
@@ -215,6 +236,234 @@ $secondary-color: #28e3d0;
   }
 }
 
+.square1 {
+  grid-area: square1;
+  width: 32px;
+  height: 33px;
+  background-color: $secondary-color;
+  position: relative;
+  bottom: 650px;
+  left: 875px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    bottom: 30px;
+    left: 800px
+  }
+}
+
+.square2 {
+  grid-area: square2;
+  width: 45px;
+  height: 47px;
+  background-color: $secondary-color;
+  position: relative;
+  bottom: 550px;
+  left: 675px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 50px;
+    left: 600px
+  }
+}
+
+.square3 {
+  grid-area: square3;
+  width: 28px;
+  height: 28px;
+  background-color: $secondary-color;
+  position: relative;
+  bottom: 470px;
+  left: 670px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 130px;
+    left: 600px
+  }
+}
+
+.square4 {
+  grid-area: square4;
+  width: 20px;
+  height: 20px;
+  background-color: $secondary-color;
+  position: relative;
+  bottom: 400px;
+  left: 425px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 200px;
+    left: 350px
+  }
+}
+
+.square5 {
+  grid-area: square5;
+  width: 11px;
+  height: 11px;
+  background-color: $secondary-color;
+  position: relative;
+  bottom: 350px;
+  left: 200px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 260px;
+    left: 140px
+  }
+}
+
+.square6 {
+  grid-area: square6;
+  width: 11px;
+  height: 11px;
+  background-color: $secondary-color;
+  position: relative;
+  bottom: 280px;
+  left: 130px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 320px;
+    left: 60px
+  }
+}
+
+.square7 {
+  grid-area: square7;
+  width: 32px;
+  height: 33px;
+  background-color: white;
+  position: relative;
+  bottom: 650px;
+  left: 675px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    bottom: 30px;
+    left: 450px
+  }
+}
+
+.square8 {
+  grid-area: square8;
+  width: 45px;
+  height: 47px;
+  background-color: white;
+  position: relative;
+  bottom: 550px;
+  left: 605px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 50px;
+    left: 380px
+  }
+}
+
+.square9 {
+  grid-area: square9;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  position: relative;
+  bottom: 470px;
+  left: 330px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 130px;
+    left: 120px
+  }
+}
+
+.square10 {
+  grid-area: square10;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  bottom: 400px;
+  left: 330px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 200px;
+    left: 110px
+  }
+}
+
+.square11 {
+  grid-area: square11;
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  position: relative;
+  bottom: 350px;
+  left: 300px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 260px;
+    left: 80px
+  }
+}
+
+.square12 {
+  grid-area: square12;
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  position: relative;
+  bottom: 280px;
+  left: 100px;
+  opacity: 0%;
+  animation-name: visibility;
+  animation-duration: 2s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  @include media(">=desktop", "<1650px") {
+    top: 320px;
+    left: -110px
+  }
+}
+
 .verticalLine {
   grid-area: verticalLine;
   width: 3px;
@@ -224,5 +473,15 @@ $secondary-color: #28e3d0;
   margin-top: 200px;
   @include media("<desktop") {
     display: none;
+  }
+}
+
+@keyframes visibility{
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
   }
 }
