@@ -276,9 +276,10 @@ $paragraph-color: #4c4c4c;
   }
   @include media("<tablet") {
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 100px;
+    grid-template-rows: 300px 10px 100px;
     grid-template-areas:
       "pageTitle"
+      "."
       "buttons";
   }
 }
