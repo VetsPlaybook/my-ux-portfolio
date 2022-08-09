@@ -42,6 +42,9 @@ $secondary-color:#28E3D0;
   border-width: 1px;
   background-color: $secondary-color;
   color: white;
+  @include media ('<tablet'){
+    width: 160px;
+  }
 }
 
 .button2{
@@ -77,6 +80,16 @@ $secondary-color:#28E3D0;
   border-width: 1px;
   background-color: $secondary-color;
   color: white;
+  @include media ('<tablet'){
+    width: 160px;
+    margin-left: 20px;
+  }
+}
+
+.buttonContainer {
+  @include media ('<tablet'){
+    margin-bottom: 70px;
+  }
 }
 
 .container {
