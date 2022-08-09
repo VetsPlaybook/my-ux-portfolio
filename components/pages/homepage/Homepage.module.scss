@@ -8,6 +8,8 @@
 //"LGdesktop": 1920px,
 //) !default;
 
+$primary-color: #01A78E;
+
 .container {
   height: 1080px;
   width: 100%;
@@ -112,11 +114,12 @@
 
 .introTitle H3 {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
+  color: $primary-color; 
 }
 
 .introTitle H4 {
-  margin: 0;
+  margin: 0;  
   @include media("<tablet") {
     margin-top: 20px
   }
