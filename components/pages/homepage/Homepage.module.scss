@@ -8,10 +8,10 @@
 //"LGdesktop": 1920px,
 //) !default;
 
-$primary-color: #01A78E;
-$secondary-color:#28E3D0;
+$primary-color: #01a78e;
+$secondary-color: #28e3d0;
 
-.button1{
+.button1 {
   width: 197px;
   height: 61px;
   text-align: center;
@@ -24,12 +24,12 @@ $secondary-color:#28E3D0;
   border-width: 1px;
   background-color: $primary-color;
   color: white;
-  @include media ('<tablet'){
+  @include media("<tablet") {
     width: 160px;
   }
 }
 
-.button1:hover{
+.button1:hover {
   width: 197px;
   height: 61px;
   text-align: center;
@@ -42,12 +42,12 @@ $secondary-color:#28E3D0;
   border-width: 1px;
   background-color: $secondary-color;
   color: white;
-  @include media ('<tablet'){
+  @include media("<tablet") {
     width: 160px;
   }
 }
 
-.button2{
+.button2 {
   width: 197px;
   height: 61px;
   text-align: center;
@@ -61,13 +61,13 @@ $secondary-color:#28E3D0;
   background-color: white;
   color: $primary-color;
   margin-left: 40px;
-  @include media ('<tablet'){
+  @include media("<tablet") {
     width: 160px;
     margin-left: 20px;
   }
 }
 
-.button2:hover{
+.button2:hover {
   width: 197px;
   height: 61px;
   text-align: center;
@@ -80,14 +80,14 @@ $secondary-color:#28E3D0;
   border-width: 1px;
   background-color: $secondary-color;
   color: white;
-  @include media ('<tablet'){
+  @include media("<tablet") {
     width: 160px;
     margin-left: 20px;
   }
 }
 
 .buttonContainer {
-  @include media ('<tablet'){
+  @include media("<tablet") {
     margin-bottom: 70px;
   }
 }
@@ -96,17 +96,14 @@ $secondary-color:#28E3D0;
   height: 1080px;
   width: 100%;
   background: linear-gradient(243deg, #01a78e 44.6%, #f9f9f9 44.6%);
-  position: relative;  
+  position: relative;
   top: -76px;
-  @include media(">=1650px") {
-    @include desktop-container;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      ". verticalLine . . . . image image image image image image image ."
-      ". verticalLine introTitle introTitle introTitle . image image image image image image image ."
-      ". verticalLine . . . . image image image image image image image .";
-      
-  }
+  @include desktop-container;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". verticalLine . . . . image image image image image image image ."
+    ". verticalLine introTitle introTitle introTitle . image image image image image image image ."
+    ". verticalLine . . . . image image image image image image image .";
 
   @include media(">=desktop", "<1650px") {
     @include desktop-container;
@@ -114,8 +111,7 @@ $secondary-color:#28E3D0;
     grid-template-areas:
       ". . introTitle introTitle . image image image image image image image image ."
       ". . introTitle introTitle . image image image image image image image image ."
-      ". . introTitle introTitle . image image image image image image image image ."
-      
+      ". . introTitle introTitle . image image image image image image image image .";
   }
 
   @include media(">=tablet", "<desktop") {
@@ -151,7 +147,6 @@ $secondary-color:#28E3D0;
   @include media(">=phone", "<tablet") {
     display: none;
   }
-  
 }
 
 .image2 {
@@ -170,11 +165,11 @@ $secondary-color:#28E3D0;
   grid-area: introTitle;
   width: 450px;
   height: 100%;
-  @include media(">=desktop", "<=1659px") {
+  @include media(">=desktop", "<1650px") {
     margin-top: 360px;
   }
   @include media(">=tablet", "<desktop") {
-    margin-top: 200px;
+    margin-top: 100px;
     width: 80%;
     text-align: center;
     margin-left: 50px;
@@ -193,31 +188,31 @@ $secondary-color:#28E3D0;
   margin-top: 0px;
   margin-bottom: 10px;
   @include media("<tablet") {
-    margin-top: 20px
+    margin-top: 20px;
   }
 }
 
 .introTitle H3 {
   margin-top: 0px;
-  margin-bottom: 10px; 
-  color: $primary-color; 
+  margin-bottom: 10px;
+  color: $primary-color;
 }
 
 .introTitle H4 {
-  margin: 0;  
+  margin: 0;
   @include media("<tablet") {
-    margin-top: 20px
+    margin-top: 20px;
   }
 }
 
 .introTitle p {
- line-height: 33px;
- @include media(">desktop") {
-  color: gray;
-}
- @include media("<tablet") {
-  color: gray;
-}
+  line-height: 33px;
+  @include media(">desktop") {
+    color: gray;
+  }
+  @include media("<tablet") {
+    color: gray;
+  }
 }
 
 .verticalLine {
