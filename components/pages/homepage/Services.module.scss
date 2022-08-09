@@ -1,0 +1,302 @@
+@import "../../breakpoints/breakpoints.scss";
+@import "../../container/container.scss";
+
+$primary-color: #01a78e;
+$secondary-color: #28e3d0;
+$paragraph-color: #4c4c4c;
+
+.buttons {
+  grid-area: buttons;
+  width: 100%;
+  height: 100%;
+  margin-top: 120px;
+  margin-left: 20px;
+  @include media(">=tablet", "<desktop") {
+    margin-left: 0px;
+  }
+  @include media("<tablet") {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+
+.button1 {
+  width: 197px;
+  height: 61px;
+  text-align: center;
+  font-family: Motiva Sans, motiva-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  background-color: $primary-color;
+  color: white;
+  cursor: pointer;
+  @include media("<tablet") {
+    width: 155px;
+    height: 50px;
+  }
+}
+
+.button1:hover {
+  width: 197px;
+  height: 61px;
+  text-align: center;
+  font-family: Motiva Sans, motiva-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  background-color: $secondary-color;
+  color: white;
+  cursor: pointer;
+  @include media("<tablet") {
+    width: 155px;
+    height: 50px;
+  }
+}
+
+.button2 {
+  width: 197px;
+  height: 61px;
+  text-align: center;
+  font-family: Motiva Sans, motiva-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  background-color: white;
+  color: $primary-color;
+  margin-left: 30px;
+  cursor: pointer;
+  @include media("<tablet") {
+    width: 155px;
+    height: 50px;
+  }
+}
+
+.button2:hover {
+  width: 197px;
+  height: 61px;
+  text-align: center;
+  font-family: Motiva Sans, motiva-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  background-color: $secondary-color;
+  color: white;
+  cursor: pointer;
+  @include media("<tablet") {
+    width: 155px;
+    height: 50px;
+  }
+}
+
+.color {
+  color: $primary-color;
+  font-weight: 1000;
+}
+
+.container {
+  height: 900px;
+  width: 100%;
+  position: relative;
+  top: -76px;
+  @include desktop-container;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". verticalLine pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons ."
+    ". verticalLine designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 ."
+    ". verticalLine designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 .";
+
+  @include media(">=desktop", "<1650px") {
+    grid-template-areas:
+      ". . pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons ."
+      ". . designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 ."
+      ". . designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 .";
+  }
+
+  @include media(">=tablet", "<desktop") {
+    height: 1400px;
+  }
+
+  @include media("<tablet") {
+    @include phone-container;
+    height:1500px;
+    grid-template-areas:
+      ". pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons ."
+      ". designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 ."
+      ". designProcess3and4 designProcess3and4 designProcess3and4 designProcess3and4 . ";
+  }
+}
+
+.container p {
+  line-height: 33px;
+  color: $paragraph-color;
+}
+
+.design {
+  grid-area: design;
+  width: 100%;
+  height: 100%;
+  color: $paragraph-color;
+  @include media(">=desktop", "<1650px") {
+    width: 80%;
+  }
+}
+
+.designProcess1and2 {
+  grid-area: designProcess1and2;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "planning . design";
+  @include media(">=desktop", "<1650px") {
+    grid-template-columns: 600px 0.1fr 600px;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 900px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "planning"
+      "design";
+  }
+
+  @include media("<tablet") {
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr;
+    grid-template-areas:
+      "planning"
+      "design";
+  }
+}
+
+.designProcess3and4 {
+  grid-area: designProcess3and4;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "development . interviewAndTesting";
+  @include media(">=desktop", "<1650px") {
+    grid-template-columns: 600px 0.1fr 600px;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 800px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "development"
+      "interviewAndTesting";
+  }
+  @include media("<tablet") {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "development"
+      "interviewAndTesting";
+  }
+}
+
+.development {
+  grid-area: development;
+  width: 100%;
+  height: 100%;
+  color: $paragraph-color;
+  @include media(">=desktop", "<1650px") {
+    width: 80%;
+  }
+}
+
+.interviewAndTesting {
+  grid-area: interviewAndTesting;
+  width: 100%;
+  height: 100%;
+  color: $paragraph-color;
+  @include media(">=desktop", "<1650px") {
+    width: 80%;
+  }
+}
+
+.pageTitle {
+  grid-area: pageTitle;
+  width: 90%;
+  height: 100%;
+  color: $paragraph-color;
+}
+
+.pageTitle H1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  @include media("<tablet") {
+    margin-bottom: 20px;
+  }
+}
+
+.pageTitle H3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: $primary-color;
+  @include media("<tablet") {
+    margin-bottom: 20px;
+  }
+  
+}
+
+.pageTitle H4 {
+  margin: 0;
+  @include media("<tablet") {
+    line-height: 30px;
+  }
+}
+
+.pageTitleAndButtons {
+  grid-area: pageTitleAndButtons;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "pageTitle . buttons";
+  @include media(">=desktop", "<1650px") {
+    grid-template-columns: 600px 0.1fr 600px;
+  }
+  @include media(">=tablet", "<desktop") {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 300px;
+    grid-template-areas:
+      "pageTitle"
+      "buttons";
+    width: 40%;
+  }
+  @include media("<tablet") {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 100px;
+    grid-template-areas:
+      "pageTitle"
+      "buttons";
+  }
+}
+
+.planning {
+  grid-area: planning;
+  width: 100%;
+  height: 100%;
+  color: $paragraph-color;
+  @include media(">=desktop", "<1650px") {
+    width: 80%;
+  }
+}
+
+.verticalLine {
+  grid-area: verticalLine;
+  width: 3px;
+  background-color: #01a78e;
+  height: 95%;
+  border-radius: 10px;
+}

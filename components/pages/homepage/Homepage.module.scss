@@ -10,6 +10,7 @@
 
 $primary-color: #01a78e;
 $secondary-color: #28e3d0;
+$paragraph-color: #4C4C4C;
 
 .button1 {
   width: 197px;
@@ -24,6 +25,7 @@ $secondary-color: #28e3d0;
   border-width: 1px;
   background-color: $primary-color;
   color: white;
+  cursor: pointer;
   @include media("<tablet") {
     width: 160px;
   }
@@ -42,6 +44,7 @@ $secondary-color: #28e3d0;
   border-width: 1px;
   background-color: $secondary-color;
   color: white;
+  cursor: pointer;
   @include media("<tablet") {
     width: 160px;
   }
@@ -61,6 +64,7 @@ $secondary-color: #28e3d0;
   background-color: white;
   color: $primary-color;
   margin-left: 40px;
+  cursor: pointer;
   @include media("<tablet") {
     width: 160px;
     margin-left: 20px;
@@ -80,6 +84,7 @@ $secondary-color: #28e3d0;
   border-width: 1px;
   background-color: $secondary-color;
   color: white;
+  cursor: pointer;
   @include media("<tablet") {
     width: 160px;
     margin-left: 20px;
@@ -140,28 +145,21 @@ $secondary-color: #28e3d0;
 .image {
   grid-area: image;
   margin-top: 150px;
-  @include media(">=tablet", "<desktop") {
-    display: none;
-  }
-
-  @include media(">=phone", "<tablet") {
+  @include media(">=phone", "<desktop") {
     display: none;
   }
 }
 
 .image2 {
-  @include media(">=desktop") {
-    display: none;
-  }
 
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet") {
     display: none;
   }
 
   @include media("<tablet") {
     grid-area: image2;
     height: 100%;
-    width: 115%;
+    width: 110%;
   }
 }
 
@@ -190,7 +188,7 @@ $secondary-color: #28e3d0;
     margin-top: 360px;
   }
   @include media(">=tablet", "<desktop") {
-    margin-top: 100px;
+    margin-top: 150px;
     width: 80%;
     text-align: center;
     margin-left: 50px;
@@ -208,19 +206,30 @@ $secondary-color: #28e3d0;
 .introTitle H1 {
   margin-top: 0px;
   margin-bottom: 10px;
+  @include media(">=tablet", "<desktop") {
+    color: white;
+  }
   @include media("<tablet") {
     margin-top: 20px;
   }
+  color: $paragraph-color;
 }
 
 .introTitle H3 {
   margin-top: 0px;
   margin-bottom: 10px;
   color: $primary-color;
+  @include media(">=tablet", "<desktop") {
+    color: white;
+  }
 }
 
 .introTitle H4 {
   margin: 0;
+  color: $paragraph-color;
+  @include media(">=tablet", "<desktop") {
+    color: white;
+  }
   @include media("<tablet") {
     margin-top: 20px;
   }
@@ -229,10 +238,10 @@ $secondary-color: #28e3d0;
 .introTitle p {
   line-height: 33px;
   @include media(">desktop") {
-    color: gray;
+    color: $paragraph-color;
   }
   @include media("<tablet") {
-    color: gray;
+    color: $paragraph-color;
   }
 }
 
@@ -474,6 +483,12 @@ $secondary-color: #28e3d0;
   @include media("<desktop") {
     display: none;
   }
+}
+
+.wrapper{
+  overflow: hidden;
+  position: relative;
+  top: -76px;
 }
 
 @keyframes visibility{

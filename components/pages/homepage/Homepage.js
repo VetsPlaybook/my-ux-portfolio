@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 function Homepage() {
   return (
     <>
+    <div className={classes.wrapper}>
       <motion.div
         className={classes.container}
         initial={{
@@ -271,6 +272,7 @@ function Homepage() {
         <img src="images/selfPortrait2.png" className={classes.image2} />
         <img src="images/selfPortrait.png" className={classes.image3} />
       </motion.div>
+      </div>
     </>
   );
 }
