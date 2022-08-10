@@ -126,6 +126,9 @@ $paragraph-color: #4c4c4c;
   align-items: center;
   justify-content: left;
   margin-bottom: 50px;
+  @include media(">=tablet") {
+  margin-top: 10px;
+  }
 }
 
 .container {

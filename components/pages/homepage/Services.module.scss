@@ -131,7 +131,7 @@ $paragraph-color: #4c4c4c;
 
   @include media("<tablet") {
     @include phone-container;
-    height: 1500px;
+    height: 1550px;
     grid-template-areas:
       ". pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons ."
       ". designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 ."
