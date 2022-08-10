@@ -279,7 +279,7 @@ $paragraph-color: #4c4c4c;
   @include media(">=phone", "<tablet") {
     @include phone-container;
     background: none;
-    grid-template-rows: 1300px 1000px 1fr;
+    grid-template-rows: 1250px 1000px 1fr;
     grid-template-areas:
       "caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 . "
       "caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 . "
