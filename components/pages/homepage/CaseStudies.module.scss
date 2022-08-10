@@ -167,7 +167,7 @@ $paragraph-color: #4c4c4c;
   grid-area: caseStudyLogoBackground;
   height: 536px;
   width: 536px;
-  background-image: linear-gradient(#3F58A4, #415081, #0C1D56);
+  background-image: linear-gradient(#3f58a4, #415081, #0c1d56);
   border-radius: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -242,6 +242,10 @@ $paragraph-color: #4c4c4c;
   margin-right: 10px;
   border-radius: 10px;
   color: white;
+  @include media("<tablet") {
+    margin-bottom: 15px;
+  }
+  
 }
 
 .caseStudyTagHolder {
@@ -251,6 +255,11 @@ $paragraph-color: #4c4c4c;
   margin-bottom: 50px;
   @include media(">=tablet") {
     margin-top: 10px;
+  }
+
+  @include media("<tablet") {
+    flex-wrap: wrap;
+    margin-bottom: 1px;
   }
 }
 
@@ -279,7 +288,7 @@ $paragraph-color: #4c4c4c;
   @include media(">=phone", "<tablet") {
     @include phone-container;
     background: none;
-    grid-template-rows: 1250px 1000px 1fr;
+    grid-template-rows: 1260px 1040px 1fr;
     grid-template-areas:
       "caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 . "
       "caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 . "
