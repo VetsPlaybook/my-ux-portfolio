@@ -131,7 +131,7 @@ $paragraph-color: #4c4c4c;
 
   @include media("<tablet") {
     @include phone-container;
-    height:1500px;
+    height: 1500px;
     grid-template-areas:
       ". pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons pageTitleAndButtons ."
       ". designProcess1and2 designProcess1and2 designProcess1and2 designProcess1and2 ."
@@ -173,7 +173,7 @@ $paragraph-color: #4c4c4c;
 
   @include media("<tablet") {
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-areas:
       "planning"
       "design";
@@ -247,7 +247,6 @@ $paragraph-color: #4c4c4c;
   @include media("<tablet") {
     margin-bottom: 20px;
   }
-  
 }
 
 .pageTitle H4 {
@@ -301,4 +300,7 @@ $paragraph-color: #4c4c4c;
   background-color: #01a78e;
   height: 95%;
   border-radius: 10px;
+  @include media(">=tablet", "<desktop") {
+    display: none;
+  }
 }
