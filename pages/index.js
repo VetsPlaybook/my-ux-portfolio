@@ -4,7 +4,7 @@ import NavBar from "@components/ui/navigationBar/Navbar";
 import Partition1 from "@components/pages/homepage/Partition1";
 import Services from "@components/pages/homepage/Services";
 import Partition2 from "@components/pages/homepage/Partition2";
-import Projects from "@components/pages/homepage/Projects";
+import CaseStudyTitle from "@components/pages/homepage/CaseStudyTitle";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Partition1 />
       <Services />
       <Partition2 />
-      <Projects />
+      <CaseStudyTitle />
     </>
   );
 }

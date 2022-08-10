@@ -126,7 +126,7 @@ $paragraph-color: #4c4c4c;
   }
 
   @include media(">=tablet", "<desktop") {
-    height: 1400px;
+    height: 1650px;
   }
 
   @include media("<tablet") {
@@ -151,6 +151,9 @@ $paragraph-color: #4c4c4c;
   color: $paragraph-color;
   @include media(">=desktop", "<1650px") {
     width: 80%;
+  }
+  @include media(">=tablet", "<desktop") {
+    width: 65%;
   }
 }
 
@@ -213,6 +216,9 @@ $paragraph-color: #4c4c4c;
   @include media(">=desktop", "<1650px") {
     width: 80%;
   }
+  @include media(">=tablet", "<desktop") {
+    width: 65%;
+  }
 }
 
 .interviewAndTesting {
@@ -222,6 +228,9 @@ $paragraph-color: #4c4c4c;
   color: $paragraph-color;
   @include media(">=desktop", "<1650px") {
     width: 80%;
+  }
+  @include media(">=tablet", "<desktop") {
+    width: 65%;
   }
 }
 
@@ -291,6 +300,10 @@ $paragraph-color: #4c4c4c;
   color: $paragraph-color;
   @include media(">=desktop", "<1650px") {
     width: 80%;
+  }
+
+  @include media(">=tablet", "<desktop") {
+    width: 65%;
   }
 }
 

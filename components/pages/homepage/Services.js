@@ -4,7 +4,7 @@ import classes from "./Services.module.scss";
 function Services() {
   return (
     <div className={classes.container}>
-      <div className={classes.verticalLine}></div>
+      <div className={classes.verticalLine}/>
       <div className={classes.pageTitleAndButtons}>
         <div className={classes.pageTitle}>
           <h3>How I work</h3>
