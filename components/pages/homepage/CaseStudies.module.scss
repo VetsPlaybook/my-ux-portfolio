@@ -1,0 +1,348 @@
+@import "../../breakpoints/breakpoints.scss";
+@import "../../container/container.scss";
+
+$primary-color: #01a78e;
+$secondary-color: #28e3d0;
+$paragraph-color: #4c4c4c;
+
+.button {
+  width: 197px;
+  height: 61px;
+  text-align: center;
+  font-family: Motiva Sans, motiva-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  background-color: white;
+  color: $primary-color;
+  cursor: pointer;
+  @include media("<tablet") {
+    width: 155px;
+    height: 50px;
+  }
+}
+
+.button:hover {
+  width: 197px;
+  height: 61px;
+  text-align: center;
+  font-family: Motiva Sans, motiva-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #707070;
+  background-color: $secondary-color;
+  color: white;
+  cursor: pointer;
+  @include media("<tablet") {
+    width: 155px;
+    height: 50px;
+  }
+}
+
+.caseStudy1 {
+  grid-area: caseStudy1;
+  @include desktop-container;
+  grid-template-rows: 1fr 700px;
+  grid-template-areas:
+    ". pageTitle pageTitle pageTitle pageTitle . . . . . . . . ."
+    ". caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground . caseStudyDescription caseStudyDescription caseStudyDescription caseStudyDescription caseStudyDescription caseStudyDescription . .";
+
+  @include media(">=desktop", "<1650px") {
+    grid-template-areas:
+      ". pageTitle pageTitle pageTitle pageTitle . . . . . . . . ."
+      ". caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground . caseStudyDescription caseStudyDescription caseStudyDescription caseStudyDescription . . . . .";
+  }
+
+  @include media(">=tablet", "<desktop") {
+    @include tablet-container;
+    grid-template-rows: 200px 1fr 1fr;
+    grid-template-areas:
+      "pageTitle pageTitle . . . ."
+      "caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground ."
+      "caseStudyDescription caseStudyDescription . . . .";
+  }
+
+  @include media(">=phone", "<tablet") {
+    @include phone-container;
+    background: none;
+    grid-template-rows: 300px 400px 550px;
+    grid-template-areas:
+      ". pageTitle pageTitle pageTitle pageTitle . "
+      ". caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground caseStudyLogoBackground "
+      ". caseStudyDescription caseStudyDescription caseStudyDescription caseStudyDescription . ";
+  }
+}
+
+.caseStudy2 {
+  grid-area: caseStudy2;
+  @include desktop-container;
+  grid-template-rows: 700px;
+  grid-template-areas: ". caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 . caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 . .";
+
+  @include media(">=desktop", "<1650px") {
+    grid-template-areas: ". caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 . caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 . . . . .";
+  }
+
+  @include media(">=tablet", "<desktop") {
+    @include tablet-container;
+    grid-template-rows: 650px 1fr;
+    grid-template-areas:
+      "caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 ."
+      "caseStudyDescription2 caseStudyDescription2 . . . .";
+  }
+
+  @include media(">=phone", "<tablet") {
+    @include phone-container;
+    background: none;
+    grid-template-rows: 400px 550px;
+    grid-template-areas:
+      ". caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 caseStudyLogoBackground2 "
+      ". caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 caseStudyDescription2 . ";
+  }
+}
+
+.caseStudy3 {
+  grid-area: caseStudy3;
+  @include desktop-container;
+  grid-template-rows: 700px;
+  grid-template-areas: ". caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 . caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 . .";
+
+  @include media(">=desktop", "<1650px") {
+    grid-template-areas: ". caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 . caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 . . . . .";
+  }
+
+  @include media(">=tablet", "<desktop") {
+    @include tablet-container;
+    grid-template-rows: 650px 1fr;
+    grid-template-areas:
+      "caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 ."
+      "caseStudyDescription3 caseStudyDescription3 . . . .";
+  }
+
+  @include media(">=phone", "<tablet") {
+    @include phone-container;
+    background: none;
+    grid-template-rows: 400px 550px;
+    grid-template-areas:
+      ". caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 caseStudyLogoBackground3 "
+      ". caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 caseStudyDescription3 . ";
+  }
+}
+
+.caseStudyDescription {
+  grid-area: caseStudyDescription;
+  width: 100%;
+  height: 100%;
+}
+
+.caseStudyDescription2 {
+  grid-area: caseStudyDescription2;
+  width: 100%;
+  height: 100%;
+}
+
+.caseStudyDescription3 {
+  grid-area: caseStudyDescription3;
+  width: 100%;
+  height: 100%;
+}
+
+.caseStudyDescription h2 {
+  margin-bottom: 0px;
+}
+.caseStudyDescription2 h2 {
+  margin-bottom: 0px;
+}
+.caseStudyDescription3 h2 {
+  margin-bottom: 0px;
+}
+
+.caseStudyLogoBackground {
+  grid-area: caseStudyLogoBackground;
+  height: 536px;
+  width: 536px;
+  background-image: linear-gradient(#3F58A4, #415081, #0C1D56);
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  @include media(">=desktop", "<1650px") {
+    height: 480px;
+    width: 480px;
+  }
+
+  @include media(">=tablet", "<desktop") {
+    margin-top: 70px;
+  }
+
+  @include media(">=phone", "<tablet") {
+    height: 343px;
+    width: 343px;
+  }
+}
+
+.caseStudyLogoBackground2 {
+  grid-area: caseStudyLogoBackground2;
+  height: 536px;
+  width: 536px;
+  background-color: blue;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  @include media(">=desktop", "<1650px") {
+    height: 480px;
+    width: 480px;
+  }
+
+  @include media(">=tablet", "<desktop") {
+    margin-top: 70px;
+  }
+
+  @include media(">=phone", "<tablet") {
+    height: 343px;
+    width: 343px;
+  }
+}
+
+.caseStudyLogoBackground3 {
+  grid-area: caseStudyLogoBackground3;
+  height: 536px;
+  width: 536px;
+  background-color: blue;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  @include media(">=desktop", "<1650px") {
+    height: 480px;
+    width: 480px;
+  }
+
+  @include media(">=tablet", "<desktop") {
+    margin-top: 70px;
+  }
+
+  @include media(">=phone", "<tablet") {
+    height: 343px;
+    width: 343px;
+  }
+}
+
+.caseStudyTag {
+  background-color: $primary-color;
+  border: none;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.caseStudyTagHolder {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 50px;
+  @include media(">=tablet") {
+    margin-top: 10px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  @include desktop-container;
+  grid-template-rows: 1000px 700px 1fr;
+  grid-template-areas:
+    ". verticalLine caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 ."
+    ". verticalLine caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 ."
+    ". verticalLine caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 .";
+
+  @include media(">=desktop", "<1650px") {
+    grid-template-rows: 1000px 700px 1fr;
+    grid-template-areas:
+      ". . caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 ."
+      ". . caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 ."
+      ". . caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 .";
+  }
+
+  @include media(">tablet", "<desktop") {
+    grid-template-rows: 1400px 1250px 1200px;
+  }
+
+  @include media(">=phone", "<tablet") {
+    @include phone-container;
+    background: none;
+    grid-template-rows: 1300px 1000px 1fr;
+    grid-template-areas:
+      "caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 . "
+      "caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 . "
+      "caseStudy3 caseStudy3 caseStudy3 caseStudy3 caseStudy3 . ";
+  }
+}
+
+.container p {
+  line-height: 33px;
+  color: $paragraph-color;
+  @include media("<desktop") {
+    margin-bottom: 30px;
+  }
+}
+
+.container h2 {
+  @include media("<tablet") {
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.pageTitle {
+  grid-area: pageTitle;
+  width: 100%;
+  height: 100%;
+  color: $paragraph-color;
+}
+
+.pageTitle H1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  @include media("<tablet") {
+    margin-bottom: 20px;
+    line-height: 70px;
+  }
+}
+
+.pageTitle H3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: $primary-color;
+  @include media("<tablet") {
+    margin-bottom: 20px;
+  }
+}
+
+.pageTitle H4 {
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 38px;
+  @include media("<tablet") {
+    line-height: 30px;
+  }
+}
+
+.verticalLine {
+  grid-area: verticalLine;
+  width: 3px;
+  background-color: #01a78e;
+  height: 95%;
+  border-radius: 10px;
+  @include media(">=tablet", "<desktop") {
+    display: none;
+  }
+}
