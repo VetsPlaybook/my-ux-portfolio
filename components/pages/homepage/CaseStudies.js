@@ -78,7 +78,7 @@ function CaseStudyTitle() {
         />
 
         <div className={classes.caseStudyDescription3}>
-          <h2>Sustainable Farmers - Increase Donations</h2>
+          <h2>Sustainable Farmers - Increasing Donations</h2>
           <div className={classes.caseStudyTagHolder}>
             <button className={classes.caseStudyTag}>Responsive Web App</button>
             <button className={classes.caseStudyTag}>B2C</button>
