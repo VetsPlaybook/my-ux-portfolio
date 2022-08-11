@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./CaseStudies.module.scss";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function CaseStudyTitle() {
   return (
@@ -17,11 +18,14 @@ function CaseStudyTitle() {
           </h4>
         </div>
 
-        <motion.img
-          src="images/vetsPlaybookLogo.png"
-          className={classes.caseStudyLogoBackground}
-          whileHover={{ scale: 1.05 }}
-        />
+        <Link href="/vetsplaybook">
+          <motion.div
+            className={classes.caseStudyLogoBackground}
+            whileHover={{ scale: 1.05 }}
+          >
+            <img src="images/vetsPlaybookLogo.png" />
+          </motion.div>
+        </Link>
 
         <div className={classes.caseStudyDescription}>
           <h2>Vets Playbook - Veteran Employment</h2>
@@ -37,16 +41,21 @@ function CaseStudyTitle() {
             military service to the civilian job market. See how I helped bring
             this online service to life.
           </p>
-          <button className={classes.button}>Read More</button>
+          <Link href="/vetsplaybook">
+            <button className={classes.button}>Read More</button>
+          </Link>
         </div>
       </div>
 
       <div className={classes.caseStudy2}>
-        <motion.img
-          src="images/healthMapLogo.png"
-          className={classes.caseStudyLogoBackground2}
-          whileHover={{ scale: 1.05 }}
-        />
+        <Link href="/healthmap">
+          <motion.div
+            className={classes.caseStudyLogoBackground2}
+            whileHover={{ scale: 1.05 }}
+          >
+            <img src="images/healthMapLogo.png" />
+          </motion.div>
+        </Link>
 
         <div className={classes.caseStudyDescription2}>
           <h2>HealthMap - Intuitive GIS Data</h2>
@@ -66,16 +75,21 @@ function CaseStudyTitle() {
             helped increase the usability of this web application for both new
             and experienced users.
           </p>
-          <button className={classes.button}>Read More</button>
+          <Link href="/healthmap">
+            <button className={classes.button}>Read More</button>
+          </Link>
         </div>
       </div>
 
       <div className={classes.caseStudy3}>
-        <motion.img
-          src="images/sustainableFarmersLogo.png"
-          className={classes.caseStudyLogoBackground3}
-          whileHover={{ scale: 1.05 }}
-        />
+      <Link href="/sustainablefarmers">
+          <motion.div
+            className={classes.caseStudyLogoBackground3}
+            whileHover={{ scale: 1.05 }}
+          >
+            <img src="images/sustainableFarmersLogo.png" />
+          </motion.div>
+        </Link>
 
         <div className={classes.caseStudyDescription3}>
           <h2>Sustainable Farmers - Increasing Donations</h2>
@@ -92,7 +106,9 @@ function CaseStudyTitle() {
             increase the total amount that donors would be willing to contribute
             towards the company's mission.
           </p>
-          <button className={classes.button}>Read More</button>
+          <Link href="/sustainablefarmers">
+            <button className={classes.button}>Read More</button>
+          </Link>
         </div>
       </div>
     </div>

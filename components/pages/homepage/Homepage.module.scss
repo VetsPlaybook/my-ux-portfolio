@@ -10,7 +10,7 @@
 
 $primary-color: #01a78e;
 $secondary-color: #28e3d0;
-$paragraph-color: #4C4C4C;
+$paragraph-color: #4c4c4c;
 
 .button1 {
   width: 197px;
@@ -142,6 +142,12 @@ $paragraph-color: #4C4C4C;
   }
 }
 
+.container p {
+  @include media(">=tablet", "<desktop") {
+    color: white;
+  }
+}
+
 .image {
   grid-area: image;
   margin-top: 150px;
@@ -151,7 +157,6 @@ $paragraph-color: #4C4C4C;
 }
 
 .image2 {
-
   @include media(">=tablet") {
     display: none;
   }
@@ -177,7 +182,6 @@ $paragraph-color: #4C4C4C;
   @include media("<tablet") {
     display: none;
   }
-
 }
 
 .introTitle {
@@ -260,7 +264,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     bottom: 30px;
-    left: 800px
+    left: 800px;
   }
 }
 
@@ -279,7 +283,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 50px;
-    left: 600px
+    left: 600px;
   }
 }
 
@@ -298,7 +302,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 130px;
-    left: 600px
+    left: 600px;
   }
 }
 
@@ -317,7 +321,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 200px;
-    left: 350px
+    left: 350px;
   }
 }
 
@@ -336,7 +340,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 260px;
-    left: 140px
+    left: 140px;
   }
 }
 
@@ -355,7 +359,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 320px;
-    left: 60px
+    left: 60px;
   }
 }
 
@@ -374,7 +378,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     bottom: 30px;
-    left: 450px
+    left: 450px;
   }
 }
 
@@ -393,7 +397,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 50px;
-    left: 380px
+    left: 380px;
   }
 }
 
@@ -412,7 +416,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 130px;
-    left: 120px
+    left: 120px;
   }
 }
 
@@ -431,7 +435,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 200px;
-    left: 110px
+    left: 110px;
   }
 }
 
@@ -450,7 +454,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 260px;
-    left: 80px
+    left: 80px;
   }
 }
 
@@ -469,7 +473,7 @@ $paragraph-color: #4C4C4C;
   animation-fill-mode: forwards;
   @include media(">=desktop", "<1650px") {
     top: 320px;
-    left: -110px
+    left: -110px;
   }
 }
 
@@ -485,13 +489,13 @@ $paragraph-color: #4C4C4C;
   }
 }
 
-.wrapper{
+.wrapper {
   overflow: hidden;
   position: relative;
   top: -76px;
 }
 
-@keyframes visibility{
+@keyframes visibility {
   0% {
     opacity: 0%;
   }

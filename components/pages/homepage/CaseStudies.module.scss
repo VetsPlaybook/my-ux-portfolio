@@ -171,6 +171,9 @@ $paragraph-color: #4c4c4c;
   border-radius: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   @include media(">=desktop", "<1650px") {
     height: 480px;
@@ -191,10 +194,13 @@ $paragraph-color: #4c4c4c;
   grid-area: caseStudyLogoBackground2;
   height: 536px;
   width: 536px;
-  background-color: blue;
+  background-color: #8C78D0;
   border-radius: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   @include media(">=desktop", "<1650px") {
     height: 480px;
@@ -215,11 +221,14 @@ $paragraph-color: #4c4c4c;
   grid-area: caseStudyLogoBackground3;
   height: 536px;
   width: 536px;
-  background-color: blue;
+  background-color: #01A78E;
   border-radius: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include media(">=desktop", "<1650px") {
     height: 480px;
     width: 480px;
@@ -288,7 +297,7 @@ $paragraph-color: #4c4c4c;
   @include media(">=phone", "<tablet") {
     @include phone-container;
     background: none;
-    grid-template-rows: 1260px 1040px 1fr;
+    grid-template-rows: 1260px 1040px 1000px;
     grid-template-areas:
       "caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 . "
       "caseStudy2 caseStudy2 caseStudy2 caseStudy2 caseStudy2 . "

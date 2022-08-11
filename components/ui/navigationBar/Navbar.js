@@ -1,12 +1,13 @@
 import React from "react";
 import classes from "./Navbar.module.scss";
+import Link from "next/link";
 
 function NavBar(props) {
   return (
     <>
       <nav className={classes.mainNavBar}>
         <div className={classes.logo}>
-            <h4>Joseph Morris</h4>
+          <h4>Joseph Morris</h4>
         </div>
         <ul className={classes.navItems}>
           <h4 className={classes.navItem}>Home</h4>
