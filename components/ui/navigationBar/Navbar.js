@@ -18,6 +18,11 @@ function NavBar(props) {
           <h4 className={classes.navItem}>Design Process</h4>
           <h4 className={classes.navItem}>Case Studies</h4>
           <button className={classes.button}>Hire me!</button>
+          <div className={classes.hamburgerButton}>
+            <div className={classes.hamburgerLine1}/>
+            <div className={classes.hamburgerLine2}/>
+            <div className={classes.hamburgerLine3}/>
+          </div>
         </ul>
       </nav>
       {props.children}
