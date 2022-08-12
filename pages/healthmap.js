@@ -5,7 +5,6 @@ import NavBar from '@components/ui/navigationBar/Navbar'
 function healthmap() {
   return (
     <>
-    <NavBar />
     <Homepage />
     </>
   )

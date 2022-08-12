@@ -102,7 +102,7 @@ $paragraph-color: #4c4c4c;
   width: 100%;
   background: linear-gradient(243deg, #01a78e 44.6%, #f9f9f9 44.6%);
   position: relative;
-  top: -76px;
+  top: -76px;  
   @include desktop-container;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -123,6 +123,7 @@ $paragraph-color: #4c4c4c;
 
   @include media(">=tablet", "<desktop") {
     @include tablet-container;
+    padding-top: 100px;
     height: 1195px;
     background: linear-gradient(243deg, #01a78e 68%, #f9f9f9 68%);
     grid-template-rows: 1fr 1fr;

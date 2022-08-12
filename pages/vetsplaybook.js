@@ -5,7 +5,6 @@ import React from 'react'
 function vetsplaybook() {
   return (
     <>
-    <NavBar />
     <Homepage />
     </>
   )

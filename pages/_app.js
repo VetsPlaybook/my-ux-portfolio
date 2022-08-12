@@ -1,13 +1,15 @@
-import '../styles/globals.css'
-import { AnimatePresence } from 'framer-motion'
+import "../styles/globals.css";
+import { AnimatePresence } from "framer-motion";
+import NavBar from "@components/ui/navigationBar/Navbar";
 
 function MyApp({ Component, pageProps, router }) {
-  
-  return(
+  return (
     <AnimatePresence exitBeforeEnter>
-     <Component {...pageProps}  />
-     </AnimatePresence>
-  )
+      <NavBar>
+        <Component {...pageProps} />
+      </NavBar>
+    </AnimatePresence>
+  );
 }
 
-export default MyApp
+export default MyApp;

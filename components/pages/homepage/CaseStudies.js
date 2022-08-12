@@ -8,7 +8,7 @@ function CaseStudyTitle() {
     <div className={classes.container}>
       <div className={classes.verticalLine} />
 
-      <div className={classes.caseStudy1}>
+      <div className={classes.caseStudy1} id='case-studies'>
         <div className={classes.pageTitle}>
           <h3>Recent work</h3>
           <h1>UX Case Studies</h1>

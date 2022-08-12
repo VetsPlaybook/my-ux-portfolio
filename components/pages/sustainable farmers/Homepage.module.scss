@@ -7,20 +7,20 @@ $paragraph-color: #4c4c4c;
 
 .allInformation{
     width: 100%;
-    height: 80%;
-    padding-top: 100px;
+    height: 100%;
+    padding-top: 100px;    
+    background-color: #01A78E;
     @include desktop-container;
     grid-template-rows: 100px 100px 1fr;
     grid-template-areas:
     ". . . . title title title title title . . . . ."
     ". . . . subTitle subTitle subTitle subTitle subTitle . . . . ."
-    ". . . . . logo . . . . . . . .";
+    ". . . . . logo logo logo logo logo . . . .";
 }
 
 .container{
     width: 100%;
     height: 788px;
-    background-color: #01A78E;
     position: relative;
     top: -76px;
     

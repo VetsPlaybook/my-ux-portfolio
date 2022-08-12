@@ -7,7 +7,7 @@ function Services() {
       <div className={classes.verticalLine}/>
       <div className={classes.pageTitleAndButtons}>
         <div className={classes.pageTitle}>
-          <h3>How I work</h3>
+          <h3 id="design-process">How I work</h3>
           <h1>Design Process</h1>
           <h4>
             Achieving your business goals starts with excellent user experience
