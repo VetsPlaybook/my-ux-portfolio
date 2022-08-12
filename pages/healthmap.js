@@ -1,8 +1,11 @@
+import Homepage from '@components/pages/health map/Homepage'
 import React from 'react'
 
 function healthmap() {
   return (
-    <div>healthmap</div>
+    <>
+    <Homepage />
+    </>
   )
 }
 

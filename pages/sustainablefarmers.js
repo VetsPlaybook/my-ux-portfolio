@@ -1,8 +1,11 @@
+import Homepage from '@components/pages/sustainable farmers/Homepage'
 import React from 'react'
 
 function sustainablefarmers() {
   return (
-    <div>sustainablefarmers</div>
+    <>
+    <Homepage />
+    </>
   )
 }
 
