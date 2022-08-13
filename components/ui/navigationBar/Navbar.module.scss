@@ -3,22 +3,11 @@
 $primary-color: #01a78e;
 $secondary-color: #28e3d0;
 $paragraph-color: #4c4c4c;
+$vetsplaybook-color: #1891fe;
+$healthmap-color: #f58837;
+$sustainablefarmers-color: #d5ba72;
 
-//$breakpoints: (
-//"phone": 360px,
-//"tablet": 768px,
-//"desktop": 1366px,
-//"LGdesktop": 1920px,
-//) !default;
-.black{
-  color: #4c4c4c;;
-}
-
-.blue{
-  color: #1891FE;
-}
-
-.button {
+@mixin button {
   height: 39px;
   width: 152px;
   border-radius: 10px;
@@ -31,17 +20,39 @@ $paragraph-color: #4c4c4c;
   }
 }
 
-.button:hover {
-  height: 39px;
-  width: 152px;
-  border-radius: 10px;
-  font-family: Motiva Sans;
+@mixin hamburgerButton {
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-family: Motiva Sans, motiva-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   font-size: 20px;
-  font-weight: 700;
-  color: white;
-  background-color: #28e3d0;
+  border-radius: 10px;
+  border-color: #707070;
+  border-width: 1px;
   cursor: pointer;
+  @include media("<tablet") {
+    width: 160px;
+  }
 }
+
+//$breakpoints: (
+//"phone": 360px,
+//"tablet": 768px,
+//"desktop": 1366px,
+//"LGdesktop": 1920px,
+//) !default;
+.black {
+  color: #4c4c4c;
+}
+
+.blue {
+  color: $vetsplaybook-color;
+}
+
+
 
 .closeButton {
   color: black;
@@ -51,8 +62,12 @@ $paragraph-color: #4c4c4c;
   cursor: pointer;
 }
 
-.green{
-  color: #01a78e;;
+.green {
+  color: $primary-color;
+  @include media(">tablet", "<desktop") {
+    color: white;
+
+  }
 }
 
 .hamburgerButton {
@@ -168,8 +183,57 @@ $paragraph-color: #4c4c4c;
   flex-direction: column;
   justify-content: space-between;
   font-family: Motiva Sans, motiva-sans, sans-serif;
-  
+
   margin-top: 45px;
+}
+
+.healthMapButton {
+  @include button;
+  color: $healthmap-color;
+  background-color: white;
+}
+
+.healthMapButton:hover {
+  @include button;
+  color: white;
+  background-color: $healthmap-color;
+}
+
+.healthMapButtonHamburger {
+  @include hamburgerButton;
+  color: $healthmap-color;
+  background-color: white;
+}
+
+.healthMapButtonHamburger:hover {
+  @include hamburgerButton;
+  color: white;
+  background-color: $healthmap-color;
+}
+
+.homeButton {
+  @include button;
+  color: $primary-color;
+  background-color: white;
+  
+}
+
+.homeButton:hover {
+  @include button;
+  color: white;
+  background-color: #28e3d0;
+}
+
+.homeButtonHamburger {
+  @include hamburgerButton;
+  color: $primary-color;
+  background-color: white;
+}
+
+.homeButtonHamburger:hover {
+  @include hamburgerButton;
+  color: white;
+  background-color: #28e3d0;
 }
 
 .logo {
@@ -245,14 +309,64 @@ $paragraph-color: #4c4c4c;
   }
 }
 
-.orange{
-  color: #F58837;
+.orange {
+  color: $healthmap-color;
 }
 
-.white{
+.sustainableFarmersButton {
+  @include button;
+  color: $sustainablefarmers-color;
+  background-color: white;
+}
+
+.sustainableFarmersButton:hover {
+  @include button;
+  color: white;
+  background-color: $sustainablefarmers-color;
+}
+
+.sustainableFarmersButtonHamburger {
+  @include hamburgerButton;
+  color: $sustainablefarmers-color;
+  background-color: white;
+}
+
+.sustainableFarmersButtonHamburger:hover {
+  @include hamburgerButton;
+  color: white;
+  background-color: $sustainablefarmers-color;
+}
+
+.vetsPlaybookButton {
+  @include button;
+  color: $vetsplaybook-color;
+  background-color: white;
+}
+
+.vetsPlaybookButton:hover {
+  @include button;
+  color: white;
+  background-color: $vetsplaybook-color;
+}
+
+.vetsPlaybookButtonHamburger {
+  @include hamburgerButton;
+  color: $vetsplaybook-color;
+  background-color: white;
+}
+
+.vetsPlaybookButtonHamburger:hover {
+  @include hamburgerButton;
+  color: white;
+  background-color: $vetsplaybook-color;
+}
+
+.white {
   color: white;
 }
 
-.yellow{
-  color: #D5BA72;
+.yellow {
+  color: $sustainablefarmers-color;
 }
+
+

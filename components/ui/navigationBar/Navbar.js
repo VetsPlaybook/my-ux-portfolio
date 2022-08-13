@@ -9,27 +9,37 @@ function NavBar(props) {
   const [open, cycleOpen] = useCycle(false, true);
   const [primaryColor, setprimaryColor] = useState("");
   const [secondaryColor, setSecondaryColor] = useState("");
+  const [buttonColor, setButtonColor] = useState("");
+  const [hamburgerButtonColor, setHamburgerButtonColor] = useState("");
   const router = useRouter();
 
   useEffect(() => {
     if (router.pathname == "/") {
       setprimaryColor(classes.black);
       setSecondaryColor(classes.green);
+      setButtonColor(classes.homeButton);
+      setHamburgerButtonColor(classes.homeButtonHamburger);
     }
 
     if (router.pathname == "/vetsplaybook") {
       setprimaryColor(classes.white);
       setSecondaryColor(classes.blue);
+      setButtonColor(classes.vetsPlaybookButton);
+      setHamburgerButtonColor(classes.vetsPlaybookButtonHamburger);
     }
 
     if (router.pathname == "/healthmap") {
       setprimaryColor(classes.white);
       setSecondaryColor(classes.orange);
+      setButtonColor(classes.healthMapButton);
+      setHamburgerButtonColor(classes.healthMapButtonHamburger);
     }
 
     if (router.pathname == "/sustainablefarmers") {
       setprimaryColor(classes.white);
       setSecondaryColor(classes.yellow);
+      setButtonColor(classes.sustainableFarmersButton);
+      setHamburgerButtonColor(classes.sustainableFarmersButtonHamburger);
     }
   });
 
@@ -48,7 +58,7 @@ function NavBar(props) {
         </Link>
         <ul className={classes.navItems}>
           <Link href="/">
-            <h4 className={classes.navItem}>Home</h4>
+            <h4 className={classes.navItem} >Home</h4>
           </Link>
           <Link href="/#design-process">
             <h4 className={classes.navItem}>Design Process</h4>
@@ -57,8 +67,8 @@ function NavBar(props) {
             <h4 className={classes.navItem}>Case Studies</h4>
           </Link>
           <a target="_blank" href="https://calendly.com/joseph-morris-ux/30min">
-            <button className={classes.button}>
-              <span className={secondaryColor}>Hire me!</span>
+            <button className={buttonColor}>
+              Hire me!
             </button>
           </a>
           <div className={classes.hamburgerButton} onClick={cycleOpen}>
@@ -134,7 +144,7 @@ function NavBar(props) {
                     href="https://calendly.com/joseph-morris-ux/30min"
                   >
                     <button
-                      className={classes.hamburgerMenuButton}
+                      className={hamburgerButtonColor}
                       onClick={cycleOpen}
                     >
                       Hire me!
