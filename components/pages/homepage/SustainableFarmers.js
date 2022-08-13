@@ -13,6 +13,7 @@ function SustainableFarmers() {
           <motion.div
             className={classes.caseStudyLogoBackground}
             layoutId="imageBackground3"
+            whileHover={{ scale: 1.05 }}
           >
             <motion.img
               src="images/sustainableFarmersLogo.png"

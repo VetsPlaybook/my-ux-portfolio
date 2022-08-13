@@ -9,10 +9,11 @@ function VetsPlaybook() {
       <div className={classes.verticalLine} />
 
       <div className={classes.caseStudy1}>
-        <Link href="/vetsplaybook" >
+        <Link href="/vetsplaybook">
           <motion.div
             className={classes.caseStudyLogoBackground}
             layoutId="imageBackground"
+            whileHover={{ scale: 1.05 }}
           >
             <motion.img
               src="images/vetsPlaybookLogo.png"

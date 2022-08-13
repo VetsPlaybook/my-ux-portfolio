@@ -13,6 +13,7 @@ function HealthMap() {
           <motion.div
             className={classes.caseStudyLogoBackground}
             layoutId="imageBackground2"
+            whileHover={{ scale: 1.05 }}
           >
             <motion.img
               src="images/healthMapLogo.png"
