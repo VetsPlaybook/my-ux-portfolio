@@ -6,7 +6,6 @@ import Partition2 from "@components/pages/homepage/Partition2";
 import CaseStudies from "@components/pages/homepage/CaseStudies";
 import VetsPlaybook from "@components/pages/homepage/VetsPlaybook";
 import ScheduleCall from "@components/pages/homepage/ScheduleCall";
-import Footer from "@components/ui/footer/Footer";
 import HealthMap from "@components/pages/homepage/HealthMap";
 import SustainableFarmers from "@components/pages/homepage/SustainableFarmers";
 
