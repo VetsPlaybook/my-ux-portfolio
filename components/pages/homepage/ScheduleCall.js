@@ -8,7 +8,9 @@ function ScheduleCall() {
         <h1>Schedule a call with me today!</h1>
       </div>
       <div className={classes.buttonContainer}>
-        <button className={classes.button1}>Schedule a call</button>
+        <a target="_blank" href="https://calendly.com/joseph-morris-ux/30min">
+          <button className={classes.button1}>Schedule a call</button>
+        </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/joseph-morris-mba-b2443587/"
