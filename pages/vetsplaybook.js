@@ -1,11 +1,10 @@
-import Homepage from '@components/pages/vets playbook/Homepage'
-import NavBar from '@components/ui/navigationBar/Navbar'
+import Title from '@components/pages/vets playbook/Title'
 import React from 'react'
 
 function vetsplaybook() {
   return (
     <>
-    <Homepage />
+    <Title />
     </>
   )
 }

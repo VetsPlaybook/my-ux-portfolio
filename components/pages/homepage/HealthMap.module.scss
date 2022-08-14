@@ -154,7 +154,7 @@ $paragraph-color: #4c4c4c;
   grid-template-areas: ". verticalLine caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 .";
 
   @include media(">=desktop", "<1650px") {
-    grid-template-rows: 1000px;
+    grid-template-rows: 700px;
     grid-template-areas: ". . caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 .";
   }
 
