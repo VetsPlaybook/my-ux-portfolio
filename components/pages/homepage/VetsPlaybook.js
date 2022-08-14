@@ -8,7 +8,7 @@ function VetsPlaybook() {
     <div className={classes.container}>
       <div className={classes.verticalLine} />
 
-      <div className={classes.caseStudy1}>
+      <div className={classes.caseStudy1} >
         <Link href="/vetsplaybook">
           <motion.div
             className={classes.caseStudyLogoBackground}

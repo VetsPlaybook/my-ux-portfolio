@@ -16,9 +16,8 @@ $paragraph-color: #4c4c4c;
   }
 
   @include media(">=tablet", "<desktop") {
-    @include tablet-container;
-    grid-template-rows: 250px;
-    grid-template-areas: "pageTitle pageTitle . . . .";
+    grid-template-rows: 220px;
+    grid-template-areas: ". pageTitle pageTitle pageTitle pageTitle . . . . . . . . .";
   }
 
   @include media(">=phone", "<tablet") {
@@ -37,8 +36,7 @@ $paragraph-color: #4c4c4c;
   grid-template-areas: ". verticalLine caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 .";
 
   @include media(">=desktop", "<1650px") {
-    grid-template-rows: 1fr;
-    grid-template-areas: ". . caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 .";
+    grid-template-areas: ". . caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 . . . . .";
   }
 
   @include media(">tablet", "<desktop") {
@@ -47,7 +45,6 @@ $paragraph-color: #4c4c4c;
 
   @include media(">=phone", "<tablet") {
     @include phone-container;
-    background: none;
     grid-template-rows: 1fr;
     grid-template-areas: "caseStudy1 caseStudy1 caseStudy1 caseStudy1 caseStudy1 . ";
   }
