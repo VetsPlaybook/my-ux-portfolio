@@ -31,14 +31,14 @@ $paragraph-color: #4c4c4c;
       ". . logo logo logo logo logo . . . . . . .";
   }
 
- @include media("<tablet") {
-   @include phone-container;
-   grid-template-rows: 135px 80px 1fr;
-   grid-template-areas: 
-   ". title title title title . "
-   ". subTitle subTitle subTitle subTitle . "
-   ". logo . . . . ";
- }
+  @include media("<tablet") {
+    @include phone-container;
+    grid-template-rows: 160px 80px 1fr;
+    grid-template-areas:
+      ". title title title title . "
+      ". subTitle subTitle subTitle subTitle . "
+      ". logo . . . . ";
+  }
 }
 
 .container {
@@ -64,7 +64,7 @@ $paragraph-color: #4c4c4c;
 .logo {
   grid-area: logo;
   @include media("<tablet") {
-    height:233px ;
+    height: 233px;
     width: 233px;
     margin-left: 50px;
   }
