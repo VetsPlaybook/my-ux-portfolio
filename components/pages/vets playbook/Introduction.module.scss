@@ -1,20 +1,21 @@
 @import "../../breakpoints/breakpoints.scss";
 @import "../../container/container.scss";
 
-$blue: #12adfe;
-
-.blue {
-  color: $blue;
-}
-
-.blueBold {
-  color: $blue;
-  font-weight: 1000;
-}
+$color: #12adfe;
 
 .bold {
   font-weight: 1000;
 }
+
+.color {
+  color: $color;
+}
+
+.colorBold {
+  color: $color;
+  font-weight: 1000;
+}
+
 
 .client h4 {
   margin-bottom: -10px;
@@ -36,7 +37,7 @@ $blue: #12adfe;
   @include media(">tablet", "<1200px") {
     grid-template-rows: 1fr 600px;
     grid-template-areas:
-      ". . titleContainer titleContainer titleContainer . . . . . . . . ."
+      ". . titleContainer titleContainer titleContainer titleContainer titleContainer . . . . . . ."
       ". . roleContainer roleContainer roleContainer . . . . . . . . .";
   }
 

@@ -5,7 +5,7 @@ function Introduction() {
   return (
     <div className={classes.container}>
       <div className={classes.titleContainer}>
-        <h3><span className={classes.blue}>About the project</span></h3>
+        <h3><span className={classes.color}>About the project</span></h3>
         <h1>Helping veterans find employment after military service</h1>
         <p>
           Finding meaningful employment is the number one concern for veterans
@@ -14,7 +14,7 @@ function Introduction() {
           that would help them land better civilian employment opportunities.</span>
           The main challenge in this project is that the research, design, and
           development had to be done from scratch, and with only a 2-man team;
-          myself and a data scientist named <span className={classes.blueBold}>Emily Kang</span>. This required that we
+          myself and a data scientist named <span className={classes.colorBold}>Emily Kang</span>. This required that we
           both personally find military veterans who were suffering from
           employment problems, interview them, and stay in contact with them
           throughout the design process. In the end, we were able to create a
@@ -26,7 +26,7 @@ function Introduction() {
       <div className={classes.roleContainer}>
         <div className={classes.role}>
           <h4>Role</h4>
-          <p>UI/IX Designer</p>
+          <p>UI/UX Designer</p>
           <p>Customer Interviews</p>
           <p>Web Developer</p>
           <p>Co-Videographer</p>

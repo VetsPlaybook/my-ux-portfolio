@@ -3,6 +3,23 @@ import IntroductionVideo from "@components/pages/vets playbook/IntroductionVideo
 import Title from "@components/pages/vets playbook/Title";
 import React from "react";
 import { motion } from "framer-motion";
+import CustomerInterviews from "@components/pages/vets playbook/CustomerInterviews";
+import CustomerInterviewsPicture from "@components/pages/vets playbook/CustomerInterviewsPicture";
+import InterviewInsights from "@components/pages/vets playbook/InterviewInsights";
+import InterviewInsightsPicture from "@components/pages/vets playbook/InterviewInsightsPicture";
+import Personas from "@components/pages/vets playbook/Personas";
+import PersonaPicture from "@components/pages/vets playbook/PersonaPicture";
+import LofiWireframe from "@components/pages/vets playbook/LofiWireframe";
+import LofiWireframePicture from "@components/pages/vets playbook/LofiWireframePicture";
+import DesignSystem from "@components/pages/vets playbook/DesignSystem";
+import DesignSystemPicture from "@components/pages/vets playbook/DesignSystemPicture";
+import InformationArchitecture from "@components/pages/vets playbook/InformationArchitecture";
+import InformationArchitecturePicture from "@components/pages/vets playbook/InformationArchitecturePicture";
+import HifiWireframe from "@components/pages/vets playbook/HifiWireframe";
+import HifiWireframePicture from "@components/pages/vets playbook/HifiWireframePicture";
+import FinalProduct from "@components/pages/vets playbook/FinalProduct";
+import FinalProductPicture from "@components/pages/vets playbook/FinalProductPicture";
+import UserTesting from "@components/pages/vets playbook/UserTesting";
 
 function vetsplaybook() {
   return (
@@ -18,6 +35,23 @@ function vetsplaybook() {
       >
         <Introduction />
         <IntroductionVideo />
+        <CustomerInterviews />
+        <CustomerInterviewsPicture />
+        <InterviewInsights />
+        <InterviewInsightsPicture />
+        <Personas />
+        <PersonaPicture />
+        <LofiWireframe />
+        <LofiWireframePicture />
+        <DesignSystem />
+        <DesignSystemPicture />
+        <InformationArchitecture />
+        <InformationArchitecturePicture />
+        <HifiWireframe />
+        <HifiWireframePicture />
+        <FinalProduct />
+        <FinalProductPicture />
+        <UserTesting />
       </motion.div>
     </>
   );

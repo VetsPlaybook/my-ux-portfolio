@@ -1,0 +1,45 @@
+@import "../../breakpoints/breakpoints.scss";
+@import "../../container/container.scss";
+
+.container {
+  width: 100%;
+  height: 100%;
+  @include desktop-container;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". . image image image image image image image image image image . .";
+
+  @include media(">1200px", "<desktop") {
+    grid-template-areas: ". . image image image image image image image image . . . .";
+  }
+
+  @include media(">tablet", "<1200px") {
+    grid-template-rows: 1fr;
+    grid-template-areas: ". . image image image image image . . . . . . .";
+  }
+
+  @include media("<tablet") {
+    @include phone-container;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". image2 image2 image2 image2 .";
+  }
+}
+
+.image {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  @include media("<tablet") {
+    display: none;
+  }
+}
+
+.image2 {
+  @include media(">tablet") {
+    display: none;
+  }
+  @include media("<tablet") {
+    grid-area: image2;
+    width: 100%;
+    height: 100%;
+  }
+}
