@@ -277,8 +277,8 @@ function Homepage() {
             }}
             transition={{ delay: 1.4, duration: 0.8 }}
           />
-          <img src="images/selfPortrait2.png" className={classes.image2} />
-          <img src="images/selfPortrait.png" className={classes.image3} />
+          <img src="images/selfPortrait2.webp" className={classes.image2} />
+          <img src="images/selfPortrait.webp" className={classes.image3} />
         </motion.div>
       </div>
     </>
