@@ -1,7 +1,5 @@
 import React from "react";
 import classes from "./CaseStudies.module.scss";
-import { motion } from "framer-motion";
-import Link from "next/link";
 
 function CaseStudyTitle() {
   return (

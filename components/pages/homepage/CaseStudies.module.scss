@@ -40,7 +40,7 @@ $paragraph-color: #4c4c4c;
   }
 
   @include media(">tablet", "<desktop") {
-    grid-template-rows: 1fr;
+    grid-template-areas: ". . caseStudy1 caseStudy1 caseStudy1 caseStudy1 . . . . . . . .";
   }
 
   @include media(">=phone", "<tablet") {
@@ -70,6 +70,9 @@ $paragraph-color: #4c4c4c;
   width: 100%;
   height: 100%;
   color: $paragraph-color;
+  @include media(">tablet", "<desktop") {
+    margin-left: -15px;
+  }
 }
 
 .pageTitle H1 {
