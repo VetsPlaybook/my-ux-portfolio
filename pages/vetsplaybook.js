@@ -20,6 +20,9 @@ import HifiWireframePicture from "@components/pages/vets playbook/HifiWireframeP
 import FinalProduct from "@components/pages/vets playbook/FinalProduct";
 import FinalProductPicture from "@components/pages/vets playbook/FinalProductPicture";
 import UserTesting from "@components/pages/vets playbook/UserTesting";
+import UserTestingPicture from "@components/pages/vets playbook/UserTestingPicture";
+import LessonsLearned from "@components/pages/vets playbook/LessonsLearned";
+import LessonsLearnedPicture from "@components/pages/vets playbook/LessonsLearnedPicture";
 
 function vetsplaybook() {
   return (
@@ -52,6 +55,9 @@ function vetsplaybook() {
         <FinalProduct />
         <FinalProductPicture />
         <UserTesting />
+        <UserTestingPicture />
+        <LessonsLearned />
+        <LessonsLearnedPicture />
       </motion.div>
     </>
   );

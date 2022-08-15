@@ -31,7 +31,7 @@ $color: #12adfe;
   }
 
   @include media(">tablet", "<1200px") {
-    grid-template-rows: 180px 260px;
+    grid-template-rows: 300px 260px;
     grid-template-areas:
       ". . titleContainer titleContainer titleContainer titleContainer titleContainer . . . . . . ."
       ". . descriptionContainer descriptionContainer descriptionContainer descriptionContainer descriptionContainer . . . . . . .";
@@ -40,7 +40,7 @@ $color: #12adfe;
   @include media("<tablet") {
     @include phone-container;
     padding-top: 0px;
-    grid-template-rows: 270px 320px;
+    grid-template-rows: 280px 320px;
     grid-template-areas:
       ". titleContainer titleContainer titleContainer titleContainer . "
       ". descriptionContainer descriptionContainer descriptionContainer descriptionContainer . ";

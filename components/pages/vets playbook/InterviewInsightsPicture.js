@@ -4,8 +4,8 @@ import classes from "./InterviewInsightsPicture.module.scss";
 function InterviewInsightsPicture() {
   return (
     <div className={classes.container}>
-        <img className={classes.image} src="images/vetsplaybook/interviewInsights.png" />
-        <img className={classes.image2} src="images/vetsplaybook/interviewInsights2.png" />
+        <img className={classes.image} src="images/vetsplaybook/interviewInsights.webp" />
+        <img className={classes.image2} src="images/vetsplaybook/interviewInsights2.webp" />
     </div>
   )
 }
