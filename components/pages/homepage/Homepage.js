@@ -265,7 +265,7 @@ function Homepage() {
             }}
           />
           <motion.img
-            src="images/selfPortrait3.png"
+            src="images/selfPortrait3.webp"
             className={classes.image}
             initial={{
               position: "relative",
