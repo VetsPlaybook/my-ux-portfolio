@@ -1,7 +1,7 @@
 @import "../../breakpoints/breakpoints.scss";
 @import "../../container/container.scss";
 
-$color: #8C78D0;
+$color: #01A78E;
 
 .bold {
   font-weight: 1000;
@@ -40,7 +40,7 @@ $color: #8C78D0;
   @include media("<tablet") {
     @include phone-container;
     padding-top: 0px;
-    grid-template-rows: 250px 510px;
+    grid-template-rows: 190px 510px;
     grid-template-areas:
       ". titleContainer titleContainer titleContainer titleContainer . "
       ". descriptionContainer descriptionContainer descriptionContainer descriptionContainer . ";

@@ -10,7 +10,7 @@ function UserTesting() {
           Testing Phase - User Testing
           </span>
         </h3>
-        <h1>Testing the web app with users & feedback</h1>
+        <h1>Testing the redesign of the mobile app</h1>
       </div>
       <div className={classes.descriptionContainer}>
         <p>

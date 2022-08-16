@@ -15,15 +15,9 @@ function Personas() {
       <div className={classes.descriptionContainer}>
         <p>
           During the interview and survey phase of our research, we started to
-          notice significant similarities in veterans who reported employment
-          problems. These members tended to fall between the ages of 22 - 30,
-          were enlisted, made less than $35,000, and typically left their first
-          civilian job with 1 year.{" "}
+          notice that users fell into one of four groups:{" "}
           <span className={classes.bold}>
-            These same members also reported that their biggest frustrations
-            were with resume writing, interview preparation, not having guidance
-            with the job hunting process, and only started to look for help
-            after encountering employment difficulties.
+            Farmers who were concerned with sustaibable practices, consumers who consciously made sustainable purchases, health conscious people, and sustainability activists.
           </span>
         </p>
       </div>

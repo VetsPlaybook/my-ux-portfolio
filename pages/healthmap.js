@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import CustomerInterviews from "@components/pages/health map/CustomerInterviews";
 import CustomerInterviewsPicture from "@components/pages/health map/CustomerInterviewsPicture";
 import HifiWireframe from "@components/pages/health map/HifiWireframe";
@@ -21,6 +22,14 @@ function healthmap() {
   return (
     <>
       <Title />
+      <motion.div
+        initial={{ opacity: "0%", y: 50 }}
+        animate={{
+          opacity: "100%",
+          y: 0,
+          transition: { duration: 0.8, delay: 0.8 },
+        }}
+      >
       <Introduction />
       <IntroductionPicture />
       <CustomerInterviews />
@@ -37,6 +46,7 @@ function healthmap() {
       <UserTestingPicture />
       <LessonsLearned />
       <LessonsLearnedPicture />
+      </motion.div>
     </>
   );
 }

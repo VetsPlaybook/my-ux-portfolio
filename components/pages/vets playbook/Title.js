@@ -32,7 +32,6 @@ const useMediaQuery = (width) => {
 
   return targetReached;
 };
-
 function Title() {
   const isLgDesktop = useMediaQuery(2500);
   const isMdDesktop = useMediaQuery(2000);

@@ -1,7 +1,7 @@
 @import "../../breakpoints/breakpoints.scss";
 @import "../../container/container.scss";
 
-$color: #8C78D0;
+$color: #01A78E;
 
 .bold {
   font-weight: 1000;
@@ -35,7 +35,7 @@ $color: #8C78D0;
   }
 
   @include media(">tablet", "<1200px") {
-    grid-template-rows: 1fr 600px;
+    grid-template-rows: 1fr 450px;
     grid-template-areas:
       ". . titleContainer titleContainer titleContainer titleContainer titleContainer . . . . . . ."
       ". . roleContainer roleContainer roleContainer . . . . . . . . .";
@@ -44,7 +44,7 @@ $color: #8C78D0;
   @include media("<tablet") {
     @include phone-container;
     padding-top: 0px;
-    grid-template-rows: 1fr 400px;
+    grid-template-rows: 1fr 300px;
     grid-template-areas:
       ". titleContainer titleContainer titleContainer titleContainer . "
       ". roleContainer roleContainer roleContainer roleContainer . ";

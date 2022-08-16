@@ -15,14 +15,10 @@ function InterviewInsights() {
       <div className={classes.descriptionContainer}>
         <p>
           Understanding customer behavior is very important in designing a
-          solution for a specific user group. We wanted to understand the pains
-          that veterans felt when applying for jobs, how they overcame those
-          challenges, if those solutions worked, and what they are currently
-          doing to overcome their employment problems.{" "}
-          <span className={classes.bold}>
-            Below is a brief look at the insights we gained from interviewing 80
-            veterans with employment issues.
-          </span>
+          solution for a specific user group. In this study, we wanted to
+          understand the pains, gains, and motivations users experienced when
+          deciding to donate towards a charitable cause, and what other
+          non-profits these donors gave to.<span className={classes.bold}> Below is a brief look at the insights we obtained.</span>
         </p>
       </div>
     </div>
