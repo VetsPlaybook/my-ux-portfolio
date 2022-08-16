@@ -27,7 +27,7 @@ function Introduction() {
           <br />
           <br />
           <span className={classes.colorBold}>
-            You can see a redacted version of the full study here.
+          You can see a redacted version of the full study upon request.
           </span>
           <br />
           <br />
