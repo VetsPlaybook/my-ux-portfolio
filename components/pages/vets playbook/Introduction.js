@@ -13,9 +13,7 @@ function Introduction() {
           military veterans in order to <span className={classes.bold}>develop a service and web application
           that would help them land better civilian employment opportunities.</span>
           The main challenge in this project is that the research, design, and
-          development had to be done from scratch, and with only a 2-man team;
-          myself and a data scientist named <span className={classes.colorBold}>Emily Kang</span>. This required that we
-          both personally find military veterans who were suffering from
+          development had to be done from scratch.  This required that my team personally find military veterans who were suffering from
           employment problems, interview them, and stay in contact with them
           throughout the design process. In the end, we were able to create a
           fully functional web application specifically developed to address the
