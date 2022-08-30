@@ -43,7 +43,7 @@ function Homepage() {
           >
             <h3>Hello, I am</h3>
             <h1>Joseph Morris</h1>
-            <h4>Professional UI/UX & Web Developer</h4>
+            <h4>Professional UI/UX Designer</h4>
             <p>
               Lets work together to create the right user experience for your
               customers and stakeholders

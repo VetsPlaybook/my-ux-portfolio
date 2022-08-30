@@ -45,7 +45,6 @@ function Introduction() {
         <div className={classes.role}>
           <h4>Role</h4>
           <p>UI/UX Designer</p>
-          <p>Consultant</p>
         </div>
         <div className={classes.client}>
           <h4>Client</h4>
