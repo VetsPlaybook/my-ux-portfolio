@@ -31,16 +31,16 @@ function Introduction() {
         </div>
         <div className={classes.client}>
           <h4>Client</h4>
-          <p>Self-Initiated</p>
+          <p>USA Government</p>
         </div>
         <div className={classes.typeOfBusiness}>
           <h4>Type of Business</h4>
-          <p>B2C</p>
-          <p>Start Up Company</p>
+          <p>B2B + B2C</p>
+          <p>Military Contracting Company</p>
         </div>
         <div className={classes.date}>
           <h4>Date</h4>
-          <p>2021 - Present</p>
+          <p>2018 - Present</p>
         </div>
       </div>
     </div>
