@@ -58,18 +58,13 @@ function NavBar(props) {
         </Link>
         <ul className={classes.navItems}>
           <Link href="/">
-            <h4 className={classes.navItem} >Home</h4>
-          </Link>
-          <Link href="/#design-process">
-            <h4 className={classes.navItem}>Design Process</h4>
+            <h4 className={classes.navItem}>Home</h4>
           </Link>
           <Link href="/#case-studies">
             <h4 className={classes.navItem}>Case Studies</h4>
           </Link>
           <a target="_blank" href="https://calendly.com/joseph-morris-ux/30min">
-            <button className={buttonColor}>
-              Hire me!
-            </button>
+            <button className={buttonColor}>Hire me!</button>
           </a>
           <div className={classes.hamburgerButton} onClick={cycleOpen}>
             <div className={classes.hamburgerLine1} />
@@ -120,14 +115,7 @@ function NavBar(props) {
                   <div className={classes.hamburgerOption} onClick={cycleOpen}>
                     Home
                   </div>
-                  <Link href="/#design-process">
-                    <div
-                      className={classes.hamburgerOption}
-                      onClick={cycleOpen}
-                    >
-                      Design Process
-                    </div>
-                  </Link>
+
                   <Link href="/#case-studies">
                     <a>
                       <div
