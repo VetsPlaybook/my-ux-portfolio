@@ -33,7 +33,7 @@ $paragraph-color: #4c4c4c;
 
   @include media("<tablet") {
     @include phone-container;
-    grid-template-rows: 160px 80px 1fr;
+    grid-template-rows: 135px 80px 1fr;
     grid-template-areas:
       ". title title title title . "
       ". subTitle subTitle subTitle subTitle . "
