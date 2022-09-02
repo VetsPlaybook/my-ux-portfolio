@@ -24,7 +24,7 @@ function Introduction() {
       <div className={classes.roleContainer}>
         <div className={classes.role}>
           <h4>Role</h4>
-          <p>Senior UI/UX Designer</p>
+          <p>UX Designer & Researcher</p>
         </div>
         <div className={classes.client}>
           <h4>Client</h4>
@@ -33,7 +33,6 @@ function Introduction() {
         <div className={classes.typeOfBusiness}>
           <h4>Type of Business</h4>
           <p>B2B + B2C</p>
-          <p>Military Contracting Company</p>
         </div>
         <div className={classes.date}>
           <h4>Date</h4>

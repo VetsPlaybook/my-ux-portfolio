@@ -25,9 +25,6 @@ export default function Home() {
   return (
     <>
       <Homepage />
-      <Partition1 />
-      <Services />
-      <Partition2 />
       <CaseStudies />
       <VetsPlaybook />
       <HealthMap />

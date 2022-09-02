@@ -43,10 +43,9 @@ function Homepage() {
           >
             <h3>Hello, I am</h3>
             <h1>Joseph Morris</h1>
-            <h4>Professional UI/UX Designer</h4>
+            <h4>UX Designer & Researcher</h4>
             <p>
-              Lets work together to create the right user experience for your
-              customers and stakeholders
+            Skilled in user research, competitor research, usability testing, prototyping, and information architecture
             </p>
             <div className={classes.buttonContainer}>
               <Link href="#case-studies">
@@ -54,9 +53,9 @@ function Homepage() {
               </Link>
               <a
                 target="_blank"
-                href="https://calendly.com/joseph-morris-ux/30min"
+                href="https://www.linkedin.com/in/joseph-morris-mba-b2443587/"
               >
-                <button className={classes.button2}>Work with me!</button>
+                <button className={classes.button2}>View my LinkedIn</button>
               </a>
             </div>
           </motion.div>

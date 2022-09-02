@@ -11,10 +11,13 @@ $color: #01A78E;
   color: $color;
 }
 
-.colorBold {
+.colorBold a{
   color: $color;
   font-weight: 1000;
+  text-decoration: underline;
 }
+
+
 
 
 .client h4 {

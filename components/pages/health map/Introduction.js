@@ -27,7 +27,7 @@ function Introduction() {
           <br />
           <br />
           <span className={classes.colorBold}>
-          You can see a redacted version of the full study upon request.
+          <a href="https://drive.google.com/uc?export=download&id=1LoFqdhopUKeLPsCw1TrW-uUzAMOFA2Lh">You can see a redacted version of the full 131 page study here.</a>
           </span>
           <br />
           <br />
@@ -44,7 +44,7 @@ function Introduction() {
       <div className={classes.roleContainer}>
         <div className={classes.role}>
           <h4>Role</h4>
-          <p>UI/UX Designer</p>
+          <p>UX Designer & Researcher</p>
         </div>
         <div className={classes.client}>
           <h4>Client</h4>
