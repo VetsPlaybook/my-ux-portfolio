@@ -55,7 +55,7 @@ function Homepage() {
                 target="_blank"
                 href="https://www.linkedin.com/in/joseph-morris-mba-b2443587/"
               >
-                <button className={classes.button2}>View my LinkedIn</button>
+                <button className={classes.button2}>View LinkedIn</button>
               </a>
             </div>
           </motion.div>
