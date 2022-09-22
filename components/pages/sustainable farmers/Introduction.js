@@ -51,7 +51,7 @@ function Introduction() {
       <div className={classes.roleContainer}>
         <div className={classes.role}>
           <h4>Role</h4>
-          <p>UX Designer & Researcher</p>
+          <p>UX Researcher</p>
         </div>
         <div className={classes.client}>
           <h4>Client</h4>
