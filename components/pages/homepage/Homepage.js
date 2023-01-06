@@ -45,7 +45,8 @@ function Homepage() {
             <h1>Joseph Morris</h1>
             <h4>UX Researcher</h4>
             <p>
-            Skilled in user research, competitor research, usability testing, prototyping, and information architecture
+              Skilled in user research, competitor research, usability testing,
+              prototyping, and information architecture
             </p>
             <div className={classes.buttonContainer}>
               <Link href="#case-studies">
@@ -53,7 +54,7 @@ function Homepage() {
               </Link>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/joseph-morris-mba-b2443587/"
+                href="https://www.linkedin.com/in/joseph-morris-b2443587/"
               >
                 <button className={classes.button2}>View LinkedIn</button>
               </a>

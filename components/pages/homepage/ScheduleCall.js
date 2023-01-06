@@ -13,7 +13,7 @@ function ScheduleCall() {
         </a>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/joseph-morris-mba-b2443587/"
+          href="https://www.linkedin.com/in/joseph-morris-b2443587/"
         >
           <button className={classes.button2}>View LinkedIn</button>
         </a>
