@@ -43,10 +43,9 @@ function Homepage() {
           >
             <h3>Hello, I am</h3>
             <h1>Joseph Morris</h1>
-            <h4>UX Researcher</h4>
+            <h4>Design Strategist</h4>
             <p>
-              Skilled in user research, competitor research, usability testing,
-              prototyping, and information architecture
+              Skilled in digital design, user research, competitor research, usability testing, roadmaps, and communicating strategic direction
             </p>
             <div className={classes.buttonContainer}>
               <Link href="#case-studies">

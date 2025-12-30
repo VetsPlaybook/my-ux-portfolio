@@ -46,15 +46,13 @@ function NavBar(props) {
   return (
     <>
       <nav className={classes.mainNavBar}>
-        <Link href="/">
-          <a>
+        <Link href="/">       
             <div className={classes.logo}>
               <h4>
                 <span className={primaryColor}>Joseph</span>{" "}
                 <span className={secondaryColor}>Morris</span>
               </h4>
-            </div>
-          </a>
+            </div>  
         </Link>
         <ul className={classes.navItems}>
           <Link href="/">
@@ -67,9 +65,7 @@ function NavBar(props) {
             <button className={buttonColor}>Hire me!</button>
           </a>
           <div className={classes.hamburgerButton} onClick={cycleOpen}>
-            <div className={classes.hamburgerLine1} />
-            <div className={classes.hamburgerLine2} />
-            <div className={classes.hamburgerLine3} />
+            <img src="images/hambuger-icon.png" className={classes.image}/>
           </div>
           <AnimatePresence>
             {open && (

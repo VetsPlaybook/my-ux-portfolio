@@ -230,20 +230,17 @@ $sustainablefarmers-color: #d5ba72;
 }
 
 .navItems {
-  display: inline-block;
+  display: flex;
   margin-right: 140px;
+   align-items: center;
   @include media("<tablet") {
     margin-right: 40px;
   }
 }
 
-.navItems ul {
-  margin: 0;
-  padding: 0;
-}
 
 .navItem {
-  display: inline-block;
+  display:inline-block;
   list-style: none;
   text-align: right;
   margin-right: 115px;
@@ -252,6 +249,16 @@ $sustainablefarmers-color: #d5ba72;
   @include media("<=1650px") {
     display: none;
   }
+}
+
+.navItems a {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.navItems ul {
+  margin: 0;
+  padding: 0;
 }
 
 .navItem:hover {
@@ -266,6 +273,7 @@ $sustainablefarmers-color: #d5ba72;
     display: none;
   }
 }
+
 
 .orange {
   color: $healthmap-color;
